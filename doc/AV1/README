@@ -1,0 +1,19 @@
+* Outils pour lancer la platforme
+1) src/lancerNameNode.sh utilisateur: permet de se connecter en ssh à dragon.enseeiht.fr et lancer le NameNode 
+sur cette machine. Pour changer de machine, on doit changer le fichier de configuration (config/nameNode.xml) 
+et changer ce script pour se connecter à la même machine. On suppose que le dossier hidoop se trouve dans le 
+répertoire courant.
+2) src/lancerServeurI.Sh utilisateur: se connecte à la machine correspondante au serveur et lance HdfsServer.
+Pour changer la machine on doit changer le fichier de configuration et la machine sur laquelle on se connecte
+dans le script.On suppose que le dossier hidoop se trouve dans le répertoire courant.
+3) src/lancerWorkerI.Sh utilisateur: se connecte à la machine correspondante au worker et lance HdfsServer.
+Pour changer la machine on doit changer le fichier de configuration et la machine sur laquelle on se connecte 
+dans le script.On suppose que le dossier hidoop se trouve dans le répertoire courant.
+
+* Ajout de serveur ou worker
+Pour ajouter un serveur ou un worker, on doit créer le fichier de configuration et le script correspondants.
+
+* Outils pour générer des jeux d'essais
+1) data/generate.sh n: générer un fichier contenant 2^n fois le fichier filesample.txt pour obtenir des 
+fichier de grandes tailles.
+
